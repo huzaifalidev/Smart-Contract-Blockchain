@@ -1,0 +1,11 @@
+1. First Lecture:-
+	-Basic Revesion
+	-Contracts
+
+2. Second Lecture:-
+	- ERC-20 Defination
+	- ERC -20  Explaination to the code.
+	- ERC Token : Code Explaination.
+	
+
+	
