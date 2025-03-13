@@ -7,5 +7,13 @@
 	- ERC -20  Explaination to the code.
 	- ERC Token : Code Explaination.
 	
+3. Third Lecture 
+	- Mint Function
+	- Revision of Open Zapllien
+
+4. Fourth Lecture
+	- Quiz :- 
+		1. when user send token it should send some percentage of amount send into the beneficary account.  
+		2. Only owner can change the percentage amount.
 
 	
