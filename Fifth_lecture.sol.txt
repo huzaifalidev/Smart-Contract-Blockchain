@@ -1,0 +1,11 @@
+    function transfer(address to, uint256 value) public virtual returns (bool) {
+        address owner = _msgSender(); //Owner
+        uint burnValue=(value*5)/100; //Burn Value
+        value-=burnValue; // - burn Value From value.
+        uint mintValue=(value*10)/100; //minting more tokens 
+        _burn(owner, burnValue); //calling burn function 
+        _mint(owner, mintValue);//calling mint function
+        _transfer(owner, to, value); //calling transfer function
+        return true;
+    }
+    

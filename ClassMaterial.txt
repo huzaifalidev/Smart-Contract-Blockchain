@@ -15,5 +15,38 @@
 	- Quiz :- 
 		1. when user send token it should send some percentage of amount send into the beneficary account.  
 		2. Only owner can change the percentage amount.
+5. Fifth Lecture:- 
+
+1.   -on each transfer, 5% of tokens should burn and 10% should mint.
+	-when tokens burn it should mint more tokens and add into 	total supply.
+	
+	mint - increase in total supply
+	burn - decrease in total supply
+
+    function transfer(address to, uint256 value) public virtual returns (bool) {
+        address owner = _msgSender(); //Owner
+        uint burnValue = (value*5)/100; //burnValue
+        value-=burnValue;              //detecting burn value from actual value.
+       
+        uint mintValue=(value*10)/100;  // increasing mint Value from 10% 
+        _burn(owner, burnValue); 
+        
+        _mint(owner, mintValue);
+        
+        _transfer(owner, to, value);
+        return true;
+    }
+
+
+2. Staking smart Contract
+	- when user stake the money on withdraw it should increase the amount to 5%.
+	functions:-
+		1. Stake Money
+
+
+
+To Study:-
+- First Learn the Openzapplien Token Boiler Plate code.
+- Then start using extension into it.
 
 	
