@@ -50,3 +50,8 @@ To Study:-
 - Then start using extension into it.
 
 	
+
+6th Lecture:-
+- 10 smart contracts from file given by miss.
+- Question : Tokens can be locked for period of time.
+- swap smart contract
